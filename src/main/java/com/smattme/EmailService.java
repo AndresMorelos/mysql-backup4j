@@ -118,10 +118,10 @@ class EmailService {
 
         Properties prop = new Properties();
         prop.put("mail.smtp.auth", true);
-        prop.put("mail.smtp.starttls.enable", "true");
+        prop.put("mail.smtp.ssl.enable", "true");
         prop.put("mail.smtp.host", this.host);
         prop.put("mail.smtp.port", this.port);
-        prop.put("mail.smtp.ssl.trust", host);
+        
 
         logger.debug(LOG_PREFIX + ": Mail properties set");
 
